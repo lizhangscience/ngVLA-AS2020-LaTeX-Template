@@ -1,0 +1,134 @@
+% ngVLA AS2020 LaTeX document template
+% version 1.0, 30 Oct 2018
+% C. Hales (NRAO SOC), chales@nrao.edu
+% 
+%
+% Change Record: Version, Date, Comment
+% 1.0, 2018/10/30, initial version
+%
+
+% Requires:
+%   - ngVLA_AS2020.cls
+%   - logo_NRAO.jpg
+%   - logo_ngVLA.jpg
+%
+% To compile, type:
+%   pdflatex ngVLA_AS2020
+%
+
+
+\documentclass{ngVLA_AS2020}
+
+
+\newcommand{\myTITLE}{\LaTeX\ Template}
+\newcommand{\myNAME}{000.00.00.00.00-0000-MEH}
+\newcommand{\myVERSION}{01}
+\newcommand{\mySTATUS}{\bf \color{red}{DRAFT}}
+\newcommand{\myDATE}{10/30/2018}
+\newcommand{\authorlist}{
+Chris Hales
+}
+
+% See class file if additional rows are
+% required in the Approve or Release tables.
+\newcommand{\approverNAME}{R. Selina}
+\newcommand{\approverTITLE}{ngVLA Project Engineer}
+\newcommand{\approverSIGNATURE}{}
+\newcommand{\releaserNAME}{ M. McKinnon }
+\newcommand{\releaserTITLE}{ngVLA Project Director}
+\newcommand{\releaserSIGNATURE}{}
+
+
+\begin{document}
+
+\maketitlepage\newpage
+
+% Custom table, left justified throughout
+% supports arbitrary number of rows and columns
+% specify fractional page width for each column, does not need to sum to unity
+\section*{Change Record}
+\begin{table}[h]\centering
+\begin{tabular}{| L{0.15} | L{0.15} | L{0.15} | L{0.15} | L{0.4} |}
+    \hline\shadeHeaderGray
+    {\bf Version} & {\bf Date} & {\bf Author} & {\bf Affected Section(s)} & { \bf Reason} \\ \hline
+    01 & 10/30/2018 & C. Hales & All & Initial version of this template \\ \hline
+    % copy line above to create new row
+\end{tabular}\end{table}\newpage
+
+\makeTOC\newpage
+
+
+\section{INTRODUCTION}
+This is a \texttt{\textbackslash section}. Type in your section headings using all capitals to distinguish from sub-headings.
+
+\subsection{hello}
+This is a \texttt{\textbackslash subsection}.
+
+\subsubsection{there}
+This is a \texttt{\textbackslash subsubsection}.
+
+\subsubsubsection{yes}
+This is a \texttt{\textbackslash subsubsubsection}.
+
+\paragraph{you}
+This is a \texttt{\textbackslash paragraph}.
+
+\subparagraph{there}
+This is a \texttt{\textbackslash subparagraph}.
+
+
+\section{SAMPLE TABLE}
+Let's look at a table.
+
+% Custom table, left justified throughout
+% supports arbitrary number of rows and columns
+% specify fractional page width for each column, can sum to less than unity
+\begin{table}[h]\centering
+\begin{tabular}{| L{0.25} | L{0.15} | L{0.45} | L{0.15} |}
+    \hline\shadeHeaderBlue
+    {\bf Parameter} & {\bf Req. \#} & {\bf Value} & {\bf Traceability} \\ \hline
+    a & b & c & d \\ \hline
+    % copy line above to create new row
+\end{tabular}\end{table}
+
+
+\section{RELATED DOCUMENTS \& DRAWINGS}
+
+\subsection{Applicable Documents}
+
+The following documents may not be directly referenced herein,
+but provide necessary context or supporting material.
+\begin{table}[h]\centering
+\begin{tabular}{| L{0.2} | L{0.4} | L{0.3} |}
+    \hline\shadeHeaderBlue
+    {\bf Reference No.} & {\bf Document Title} & {\bf Rev / Doc. No.} \\ \hline
+    a & b & c \\ \hline
+\end{tabular}\end{table}
+
+\subsection{Reference Documents}
+
+The following documents are referenced within this text:
+\begin{table}[h]\centering
+\begin{tabular}{| L{0.2} | L{0.4} | L{0.3} |}
+    \hline\shadeHeaderBlue
+    {\bf Reference No.} & {\bf Document Title} & {\bf Rev / Doc. No.} \\ \hline
+    a & b & c \\ \hline
+\end{tabular}\end{table}
+
+
+
+
+\section{APPENDIX}
+
+\subsection{Abbreviations \& Acronyms}
+
+\begin{table}[h]\centering
+\begin{tabular}{| L{0.2} | L{0.7} |}
+\hline\shadeHeaderBlue
+{\bf Acronym} & {\bf Description} \\ \hline
+SRKP & Singer-Ready Karaoke Pipeline (courtesy STM)\\ \hline
+\end{tabular}\end{table}
+
+
+
+\end{document}

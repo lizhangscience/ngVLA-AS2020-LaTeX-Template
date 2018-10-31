@@ -1,7 +1,7 @@
 % ngVLA AS2020 LaTeX class file
 % version 1.0, 30 Oct 2018
 % C. Hales (NRAO SOC), chales@nrao.edu
-% 
+% https://github.com/chrishales/ngVLA-AS2020-LaTeX-Template
 %
 % Change Record: Version, Date, Comment
 % 1.0, 2018/10/30, initial version
